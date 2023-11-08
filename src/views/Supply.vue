@@ -111,7 +111,7 @@
                     <ApexChart :series="series" :chartOptions="chartOptions" />
                 </div>
                 <div v-else>
-                    <div :style="$vuetify.display.mdAndUp ? 'height: 630px;' : 'height: 330px;'"></div>
+                    <div :style="$vuetify.display.lgAndUp ? 'height: 630px;' : 'height: 330px;'"></div>
                 </div>
             </v-card>
             <span class="text-caption" style="align-self: flex-end; margin-top: auto;">
