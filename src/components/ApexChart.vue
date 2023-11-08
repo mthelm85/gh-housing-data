@@ -1,5 +1,5 @@
 <template>
-    <vue-apexchart :options="chartOptions" :series="series" type="line" :height="$vuetify.display.lgAndUp ? 600 : 300" />
+    <vue-apexchart :options="chartOptions" :series="series" type="line" :height="$vuetify.display.xlAndUp ? 600 : 300" />
 </template>
   
 <script>
