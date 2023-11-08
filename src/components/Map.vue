@@ -8,7 +8,7 @@
                         {{ l.zip }}
                     </v-chip>
                     <v-card>
-                        <div id="map" style="height: 600px;"></div>
+                        <div id="map" :style="$vuetify.display.mdAndUp ? 'height: 600px;' : 'height: 300px;'"></div>
                     </v-card>
                 </v-col>
             </v-row>
@@ -104,12 +104,6 @@ export default {
                     fill: new Fill({
                         color: 'rgba(31, 81, 255, 0.3)'
                     }),
-                    // text: new Text({
-                    //     text: '98335',
-                    //     textAlign: 'center',
-                    //     fill: new Fill({ color: 'lightgrey' }),
-                    //     font: '24px sans-serif'
-                    // })
                 });
 
                 case '98333': return new Style({
@@ -120,12 +114,6 @@ export default {
                     fill: new Fill({
                         color: 'rgba(188, 18, 254, 0.3)'
                     }),
-                    // text: new Text({
-                    //     text: '98333',
-                    //     textAlign: 'center',
-                    //     fill: new Fill({ color: 'lightgrey' }),
-                    //     font: '24px sans-serif'
-                    // })
                 });
 
                 case '98332': return new Style({
@@ -136,12 +124,6 @@ export default {
                     fill: new Fill({
                         color: 'rgba(57, 255, 20, 0.3)'
                     }),
-                    // text: new Text({
-                    //     text: '98332',
-                    //     textAlign: 'center',
-                    //     fill: new Fill({ color: 'lightgrey' }),
-                    //     font: '24px sans-serif'
-                    // })
                 });
 
                 case '98329': return new Style({
@@ -152,12 +134,6 @@ export default {
                     fill: new Fill({
                         color: 'rgba(255, 94, 0, 0.3)'
                     }),
-                    // text: new Text({
-                    //     text: '98329',
-                    //     textAlign: 'center',
-                    //     fill: new Fill({ color: 'lightgrey' }),
-                    //     font: '24px sans-serif'
-                    // })
                 });
             }
         },
