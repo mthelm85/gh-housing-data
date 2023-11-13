@@ -8,7 +8,7 @@
                         {{ l.zip }}
                     </v-chip>
                     <v-card>
-                        <div id="map" :style="$vuetify.display.xlAndUp ? 'height: 600px;' : 'height: 400px;'"></div>
+                        <div id="map" :style="$vuetify.display.lgAndUp ? 'height: 600px;' : 'height: 400px;'"></div>
                     </v-card>
                 </v-col>
             </v-row>

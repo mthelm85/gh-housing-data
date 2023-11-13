@@ -10,11 +10,11 @@
             </v-card-item>
 
             <v-card-text>
-              <span :class="$vuetify.display.xlAndUp ? 'text-h2' : 'text-h6'">
+              <span :class="$vuetify.display.lgAndUp ? 'text-h2' : 'text-h6'">
                 <AnimatedValue :value="825000" format="currency" />
               </span>
               <v-divider class="mt-2"></v-divider>
-              <div :class="$vuetify.display.xlAndUp ? 'text-h6 mt-2' : 'mt-2'">
+              <div :class="$vuetify.display.lgAndUp ? 'text-h6 mt-2' : 'mt-2'">
                 12-month change
                 <div style="color: #fa0542;">
                   <v-icon color="#fa0542" icon="mdi-arrow-down"></v-icon>1.2%
@@ -31,11 +31,11 @@
             </v-card-item>
 
             <v-card-text>
-              <span :class="$vuetify.display.xlAndUp ? 'text-h2' : 'text-h6'">
+              <span :class="$vuetify.display.lgAndUp ? 'text-h2' : 'text-h6'">
                 <AnimatedValue :value="75" format="plain" />
               </span>
               <v-divider class="mt-2"></v-divider>
-              <div :class="$vuetify.display.xlAndUp ? 'text-h6 mt-2' : 'mt-2'">
+              <div :class="$vuetify.display.lgAndUp ? 'text-h6 mt-2' : 'mt-2'">
                 12-month change
                 <div style="color: #fa0542;">
                   <v-icon color="#fa0542" icon="mdi-arrow-down"></v-icon>13.8%
@@ -52,11 +52,11 @@
             </v-card-item>
 
             <v-card-text>
-              <span :class="$vuetify.display.xlAndUp ? 'text-h2' : 'text-h6'">
+              <span :class="$vuetify.display.lgAndUp ? 'text-h2' : 'text-h6'">
                 <AnimatedValue :value="99.0" format="percent" />
               </span>
               <v-divider class="mt-2"></v-divider>
-              <div :class="$vuetify.display.xlAndUp ? 'text-h6 mt-2' : 'mt-2'">
+              <div :class="$vuetify.display.lgAndUp ? 'text-h6 mt-2' : 'mt-2'">
                 12-month change
                 <div style="color: #39FF14;">
                   <v-icon color="#39FF14" icon="mdi-arrow-up"></v-icon>0.5pt
@@ -78,7 +78,7 @@
           <ApexChart :series="series" :chartOptions="chartOptions" />
         </div>
         <div v-else>
-          <div :style="$vuetify.display.xlAndUp ? 'height: 630px;' : 'height: 330px;'"></div>
+          <div :style="$vuetify.display.lgAndUp ? 'height: 630px;' : 'height: 330px;'"></div>
         </div>
       </v-card>
       <span class="text-caption" style="align-self: flex-end; margin-top: auto;">

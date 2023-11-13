@@ -1,8 +1,7 @@
 <template>
   <v-layout class="overflow-visible" style="height: 56px;">
 
-    <v-bottom-navigation :class="pulsateClass" v-model="value" :bg-color="color" active grow key="bottom-navigation"
-      inline>
+    <v-bottom-navigation class="fixed-bottom-nav" :class="pulsateClass" :bg-color="color" active grow key="bottom-navigation">
       <v-btn class="dj-button" v-for="page in pages" :key="page.id" :to="page.route">
         <v-icon>{{ page.icon }}</v-icon>
         <span>{{ page.title }}</span>
@@ -15,7 +14,6 @@
 <script>
 export default {
   data: () => ({
-    value: 1,
     color: '#0FF0FC',
     pulsateClass: '',
     pages: [
@@ -76,5 +74,9 @@ export default {
 
 .static {
   box-shadow: 0 0 10px #0FF0FC;
+}
+
+.fixed-bottom-nav {
+  position: fixed !important;
 }
 </style>
